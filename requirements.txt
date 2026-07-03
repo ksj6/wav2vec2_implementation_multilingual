@@ -1,0 +1,16 @@
+transformers==4.44.2
+datasets==2.21.0
+accelerate==0.34.2
+evaluate==0.4.2
+jiwer==3.0.4
+torchaudio
+soundfile
+librosa==0.10.2
+numpy<2.0
+pandas
+tqdm
+matplotlib
+seaborn
+tensorboard
+wandb
+pyctcdecode==0.5.0

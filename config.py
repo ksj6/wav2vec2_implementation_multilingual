@@ -25,8 +25,8 @@ import torch
 # google/fleurs config name -> readable folder name
 LANGUAGES = {
     "hi_in": "hindi",
-    "mr_in": "marathi",
-    "bn_in": "bengali",
+    # "mr_in": "marathi",
+    # "bn_in": "bengali",
 }
 
 DATASET_NAME = "google/fleurs"
@@ -85,8 +85,8 @@ EVAL_STEPS = 200
 SAVE_STEPS = 200
 GRADIENT_CHECKPOINTING = True
 
-TRAIN_SUBSET_SIZE = None    # set e.g. 300 for a smoke test before a real run
-EVAL_SUBSET_SIZE = None
+TRAIN_SUBSET_SIZE = 300    # set e.g. 300 for a smoke test before a real run
+EVAL_SUBSET_SIZE = 100     # set e.g. 100 for a smoke test before a real run
 
 # -------------------- Experiment tracking --------------------
 # "tensorboard", "wandb", "both", or "none"

@@ -76,7 +76,7 @@ PER_DEVICE_TRAIN_BATCH_SIZE = 4        # XLSR-53 (~315M params) is much bigger t
 PER_DEVICE_EVAL_BATCH_SIZE = 4
 GRADIENT_ACCUMULATION_STEPS = 4         # effective batch = 16
 LEARNING_RATE = 3e-4
-WARMUP_STEPS = 40. # it is 300 in actual 
+WARMUP_STEPS = 40 # it is 300 in actual 
 WEIGHT_DECAY = 0.005
 FP16 = torch.cuda.is_available()
 SAVE_TOTAL_LIMIT = 2

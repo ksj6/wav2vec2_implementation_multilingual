@@ -13,7 +13,7 @@ open/close per language correctly).
 import os
 import json
 import numpy as np
-import evaluation as hf_evaluate
+import evaluate as hf_evaluate
 from transformers import Trainer, TrainingArguments, set_seed
 
 import config

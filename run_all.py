@@ -12,7 +12,7 @@ are safe.
 
 import config
 from train import run_training
-from evaluate import run_evaluation
+from evaluation import run_evaluation
 from plot_results import plot_loss_curve, plot_eval_curve, plot_language_comparison
 
 

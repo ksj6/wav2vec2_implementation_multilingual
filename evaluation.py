@@ -9,7 +9,7 @@ import os
 import csv
 import json
 import torch
-import evaluate as hf_evaluate
+import evaluation as hf_evaluate
 from torch.utils.data import DataLoader
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 

@@ -71,18 +71,18 @@ FREEZE_FEATURE_ENCODER = True
 
 # -------------------- Training --------------------
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-NUM_EPOCHS = 15
+NUM_EPOCHS = 1 # it is 15 actual 
 PER_DEVICE_TRAIN_BATCH_SIZE = 4        # XLSR-53 (~315M params) is much bigger than base
 PER_DEVICE_EVAL_BATCH_SIZE = 4
 GRADIENT_ACCUMULATION_STEPS = 4         # effective batch = 16
 LEARNING_RATE = 3e-4
-WARMUP_STEPS = 300
+WARMUP_STEPS = 40. # it is 300 in actual 
 WEIGHT_DECAY = 0.005
 FP16 = torch.cuda.is_available()
 SAVE_TOTAL_LIMIT = 2
 LOGGING_STEPS = 25
-EVAL_STEPS = 200
-SAVE_STEPS = 200
+EVAL_STEPS = 100
+SAVE_STEPS = 100
 GRADIENT_CHECKPOINTING = True
 
 TRAIN_SUBSET_SIZE = 300    # set e.g. 300 for a smoke test before a real run
